@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/79c137b893.js" crossorigin="anonymous"></script>
 </head>
 
+<base target="_blank">
+
 <body>
     <!--Navbar-->
     <nav class="nav">
@@ -50,11 +52,11 @@
                 <a class="clearLink">
                     <li class="menu__item menu__item--disabled">Academy</li>
                 </a>
+                <a href="#intership" class="clearLink">
+                    <li class="menu__item menu__item--available">Intership</li>
+                </a>
                 <a href="#main" class="clearLink">
                     <li class="menu__item menu__item--available">Patrocinadores</li>
-                </a>
-                <a href="#" class="clearLink">
-                    <li class="menu__item menu__item--available">Intership</li>
                 </a>
                 <a href="#contact" class="clearLink">
                     <li class="menu__item menu__item--available">Contacto</li>
@@ -313,8 +315,55 @@
         </div>
     </header>
 
+    <!--Intership-->
+    <main class="intership" id="intership">
+        <h2 class="intership__title">Intership <span class="intership__title--blue">2020</span></h2>
+        <p class="intership__description">
+            Workshop Technology te invita a participar en el programa de internship de verano en donde pondrás en práctica tus habilidades en el desarrollo de software, así como obtener experiencia en el ámbito laboral profesional en una empresa local con uno de nuestros partners asociados.
+        </p>
+        <h3 class="intership__subtitle">¿Cómo participo?</h3>
+        <p class="intership__description">
+            Se llevará a cabo un proceso de selección de aspirantes que contará con cuatro pasos.
+        </p>
+
+        <div class="intership__steps">
+            <div class="intership__steps__step">
+                <h4 class="intership__steps__step__title">Envio de datos</h4>
+                <p class="intership__steps__step__time">Hasta el 20 de Abril</p>
+                <p class="intership__steps__step__description">
+                    Enviar tu CV y Carta de intención a nuestro correo.
+                </p>
+            </div>
+
+            <div class="intership__steps__step">
+                <h4 class="intership__steps__step__title">Entrevista</h4>
+                <p class="intership__steps__step__time">24 de Abril - 18 de Mayo</p>
+                <p class="intership__steps__step__description">
+                    La segunda fase consistirá en asistir a una entrevista la cual estará más enfocada en evaluar actitudes personales que sus habilidades técnicas.
+                </p>
+            </div>
+
+            <div class="intership__steps__step">
+                <h4 class="intership__steps__step__title">Resultado</h4>
+                <p class="intership__steps__step__time">24 de mayo</p>
+                <p class="intership__steps__step__description">
+                    En esta fase se les informará a través de un correo a los aspirantes seleccionados los detalles del internship.
+                </p>
+            </div>
+
+            <div class="intership__steps__step">
+                <h4 class="intership__steps__step__title">Confirmación</h4>
+                <p class="intership__steps__step__time">27 de mayo</p>
+                <p class="intership__steps__step__description">
+                    En esta última fase, los aspirantes seleccionados deberán confirmar su participación en el internship a través de un correo electrónico.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
     <!--Sponsors-->
-    <main class="main" id="main">
+    <div class="main" id="main">
         <div class="main__header">
             <div class="main__header__left">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768" version="1.1">
@@ -351,19 +400,20 @@
         </div>
         <div class="main__sponsors" id="sponsors">
             <div class="main__sponsors__left">
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
-                <div class="main__sponsors__card"></div>
+                <a href="https://yellowme.mx" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image1.png" alt="Yellowme"></div></a>
+                <a href="https://www.soldai.com" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image2.png" alt="Soldai"></div></a>
+                <a href="https://www.ksquareinc.com" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image3.png" alt="Ksquare"></div></a>
+                <a href="https://www.midsoftware.com.mx" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image4.png" alt="MID Software"></div></a>
+                <a href="http://www.walook.com.mx" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image5.png" alt="Walook"></div></a>
+                <a href="https://www.cubicode.mx" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image6.png" alt="Cubicode"></div></a>
+                <a href="https://www.coatilabs.com" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image7.png" alt="Coatí Labs"></div></a>
+                <a href="https://gleo.mx" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image8.png" alt="Gleo"></div></a>
+                <a href="http://www.iktansoft.com" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image9.png" alt="Iktansoft"></div></a>
+                <a href="https://nearsoft.com" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image10.png" alt="Nearsoft"></div></a>
+                <a href="http://www.dealergeek.com" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image11.png" alt="Dealergeek"></div></a>
+                <a href="#" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image12.png" alt="?"></div></a>
+                <a href="https://www.uady.mx" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image13.png" alt="Uady"></div></a>
+                <a href="https://www.facebook.com/SAMatematicas/" class="clearLink"><div class="main__sponsors__card"><img src="assets/logos/image14.png" alt="SA Fmat"></div></a>
             </div>
             <div class="main__sponsors__right">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768" version="1.1">
@@ -405,7 +455,7 @@
             </svg>
 
         </div>
-    </main>
+    </div>
 
     <footer class="footer">
         <small>Workshop Technology © 2020</small>

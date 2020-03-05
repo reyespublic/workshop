@@ -41,6 +41,68 @@
     }
 }
 
+.intership {
+    width: 100%;
+    height: 100vh;
+
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: .5rem;
+
+        &--blue {
+            color: $primaryColor;
+        }
+    }
+    
+    &__subtitle {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        text-align: justify;
+        width: 70%;
+    }
+
+    &__steps {
+        margin-top: 3rem;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        align-items: start;
+
+        &__step {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &__title {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+
+            &__time {
+                color: $primaryColor;
+            }
+
+            &__description {
+                text-align: justify;
+                margin-top: .5rem;
+            }
+        }
+    }
+}
+
 .main {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -128,14 +190,10 @@
 
             padding: 2rem;
 
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 120px;
-            grid-auto-rows: 120px;
-            gap: 2rem;
-
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-content: center;
+            align-items: center;
         }
 
         &__right {
@@ -144,7 +202,30 @@
         }
 
         &__card {
+            width: 250px;
+            height: 100px;
+
+            margin: 1rem;
+            padding: 1rem;
+
             background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(grey, .2);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 80%;
+                height: 80%;
+
+                object-fit: contain;
+            }
+
+            &:hover {
+                transform: translatey(-5px);
+            }
         }
     }
 
