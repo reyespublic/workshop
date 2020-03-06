@@ -1,6 +1,6 @@
 .nav {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 
     background-color: white;
 
@@ -8,9 +8,9 @@
     justify-content: space-between;
     align-items: center;
 
-    position: absolute;
-    top: 0;
-    left: 0;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
     
     &__left {
         width: 150px;
@@ -18,7 +18,9 @@
     }
 
     &__right {
-        
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
     }
 }
 

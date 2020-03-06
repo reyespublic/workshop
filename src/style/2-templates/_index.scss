@@ -1,9 +1,21 @@
-.header {
+.top {
     width: 100%;
     height: 100vh;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content 1fr;
+}
+
+.header {
+    width: 100%;
+    //height: 100vh;
+
+    display: grid;
+    grid-template-columns: 60% 1fr;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+    }
     
     justify-content: center;
     align-items: center;
@@ -17,7 +29,7 @@
         justify-self: center;
 
         &__title {
-            font-size: 5rem;
+            font-size: 4rem;
             font-weight: bold;
             line-height: 100%;
 
@@ -29,8 +41,8 @@
         }
 
         &__content {
-            width: 100%;
             font-weight: 300;
+            font-size: 1.2rem;
         }
     }
 
@@ -38,12 +50,15 @@
         width: 100%;
         padding: 2rem;
 
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
     }
 }
 
 .intership {
     width: 100%;
-    height: 100vh;
+    //height: 100vh;
 
     padding: 3rem;
 
@@ -70,6 +85,10 @@
         font-size: 1.2rem;
         text-align: justify;
         width: 70%;
+
+        @media screen and (max-width: 1024px) {
+            width: 90%;
+        }
     }
 
     &__steps {
@@ -80,11 +99,25 @@
         gap: 3rem;
         align-items: start;
 
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+        }
+
         &__step {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+                margin: 1rem 0;
+                padding: 1rem;
+
+                border: 1px solid rgba(grey, .2);
+                border-radius: 10px;
+            }
 
             &__title {
                 font-size: 1.4rem;
@@ -104,8 +137,14 @@
 }
 
 .main {
+    width: 100%;
+
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+
+    @media screen and (max-width: 1024px) {
+        grid-template-rows: repeat(3, max-content);
+    }
 
     &__header {
         width: 100%;
@@ -116,6 +155,10 @@
         justify-content: center;
         justify-items: center;
         align-items: center;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
 
         &__left {
             width: 100%;
@@ -131,6 +174,10 @@
             svg {
                 width: 100%;
                 height: 100%;
+            }
+
+            @media screen and (max-width: 1024px) {
+                display: none;
             }
         }
 
@@ -151,10 +198,18 @@
             justify-content: center;
             align-items: center;
 
+            @media screen and (max-width: 1024px) {
+                text-align: center;
+            }
+
             &__title {
                 font-size: 3rem;
                 line-height: 100%;
                 margin-bottom: 1rem;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 2.5rem;
+                }
             }
 
             &__content {
@@ -183,6 +238,10 @@
         grid-template-columns: 1fr 30%;
         justify-items: center;
         align-items: center;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
         
         &__left {
             width: 100%;
@@ -243,6 +302,10 @@
         &__title {
             font-size: 4rem;
             margin-bottom: 2rem;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 2rem;
+            }
         }
 
         &__btn:link,
